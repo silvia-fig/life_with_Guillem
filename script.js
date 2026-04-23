@@ -77,6 +77,7 @@ cmd.addEventListener("keydown", (e) => {
         output.innerHTML += "<br>Este sistema no tiene rollback.<br>";
         output.innerHTML += "Porque cada decisión nos trajo aquí.<br>";
         output.innerHTML += "Y aquí es donde quiero estar siempre.<br>";
+        output.innerHTML += "Te quiero 💛.<br>";        
       }, 600);
     }
 
