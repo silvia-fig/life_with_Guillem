@@ -13,9 +13,6 @@ const intro = [
 "> Denia detectado 🌊",
 "> sistema emocional activado",
 "",
-"> convivencia iniciada",
-"> gatos + perro integrados 🐱🐱🐶",
-"",
 "> Sener → sistema Respira desplegado",
 "> equipo escalado",
 "",
@@ -30,13 +27,13 @@ const intro = [
 "",
 "> sistema listo",
 "",
-"> IMPORTANTE:",
-"> lee README.md para entender el sistema completo 💛",
-"",
-"> comandos disponibles:",
+"> comandos:",
 "> open /denia",
-"> open /qr",
-"> te quiero"
+"> open /cancion",
+"> te quiero",
+"",
+"> IMPORTANTE:",
+"> ver README.md para entender el sistema completo 💛"
 ];
 
 function typeLines(lines, i = 0) {
@@ -54,15 +51,13 @@ cmd.addEventListener("keydown", (e) => {
     output.innerHTML += "<br>> " + value + "<br>";
 
     // 🌊 Denia
-    if (value === "open/denia") {
+    if (value === "open /denia") {
       output.innerHTML += "<img src='assets/denia.jpg'><br>";
     }
 
-    // 🎶 QR → reproduce canción
-    if (value === "open/qr") {
-      output.innerHTML += "<img src='assets/madre_tierra_qr.png'><br>";
-      output.innerHTML += "<br>🎶 reproduciendo recuerdo...<br>";
-
+    // 🎶 Canción (AUTOPLAY CONTROLADO)
+    if (value === "open /cancion") {
+      output.innerHTML += "<br>🎶 reproduciendo Madre Tierra...<br>";
       audio.currentTime = 0;
       audio.play();
     }
