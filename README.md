@@ -162,9 +162,9 @@ Estado del sistema:
 
 ## 🎁 Easter eggs
 
-- QR → “Madre Tierra” 🎶  
-- `/open denia` → acceso a memoria 🌊  
-- `/unlock future` → mensaje oculto  
+- `open /cancion` → acceso a memoria sonora 🎶  
+- `open /denia` → acceso a memoria visual 🌊  
+- `te quiero` → evento del sistema 💛
 
 ---
 
