@@ -35,7 +35,8 @@ const intro = [
 "",
 "> te quiero 💛",
 "",
-"> SYSTEM STATE: READY [OK]"
+"> SYSTEM STATE: READY [OK]",
+"> COMANDOS REGISTRADOS DISPONIBLES",
 ];
 
 function typeLines(lines, i = 0) {
