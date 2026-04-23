@@ -141,7 +141,7 @@ Estado del sistema:
 
 ---
 
-## 🐞 “bugs” conocidos
+## 🐞 Bugs conocidos
 
 - Autoexigencia elevada  
 - Dificultad para desconectar procesos activos  
@@ -149,7 +149,7 @@ Estado del sistema:
 
 ---
 
-## 🔮 Hoja de ruta
+## 🔮 Roadmap
 
 - Escalar Cervellia 🚀  
 - Seguir evolucionando como sistema conjunto  
@@ -168,16 +168,31 @@ Estado del sistema:
 
 ---
 
-## 💛 Nota final
+## ❤️ Nota de la cofundadora
+
+Gracias por aquel viernes 22 de abril de 2016.
+
+Por dejarte engañar (un poco). 
+Por quedarte (del todo). 
+
+Y por esta vida que estamos construyendo juntos. 
 
 Esto no es una simulación.
-
 Esto es producción.
 
 Cada versión de este sistema ha llevado exactamente hasta aquí.
 
 Y si se volviera a compilar desde cero…
-
 se elegirían los mismos módulos.
 
 Especialmente el más importante.
+
+Te quiero. 
+
+---
+
+## 🏷️ Licencia
+
+Uso exclusivo de Silvia & Guillem. 
+
+Todos los derechos reservados. 
