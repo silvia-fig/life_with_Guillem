@@ -1,10 +1,10 @@
 const output = document.getElementById("output");
 const cmd = document.getElementById("cmd");
+const audio = document.getElementById("audio");
 
 const intro = [
 "> iniciando life_with_Guillem...",
-"> estado: en producción (10 años)",
-"> cargando historia...",
+"> sistema en producción (10 años)",
 "",
 "> 2016 → Euroestudios",
 "> 22/04 → evento no planificado 😏",
@@ -29,11 +29,14 @@ const intro = [
 "> equipo: 5 personas",
 "",
 "> sistema listo",
-"> esperando input...",
 "",
-">",
 "> IMPORTANTE:",
-"> consulta README.md para entender el sistema completo 💛"
+"> lee README.md para entender el sistema completo 💛",
+"",
+"> comandos disponibles:",
+"> open /denia",
+"> open /qr",
+"> te quiero"
 ];
 
 function typeLines(lines, i = 0) {
@@ -50,16 +53,22 @@ cmd.addEventListener("keydown", (e) => {
     const value = cmd.value;
     output.innerHTML += "<br>> " + value + "<br>";
 
+    // 🌊 Denia
     if (value === "open /denia") {
       output.innerHTML += "<img src='assets/denia.jpg'><br>";
     }
 
+    // 🎶 QR → reproduce canción
     if (value === "open /qr") {
       output.innerHTML += "<img src='assets/madre_tierra_qr.png'><br>";
-      output.innerHTML += "<br>🎶 escanéalo cuando toque.<br>";
+      output.innerHTML += "<br>🎶 reproduciendo recuerdo...<br>";
+
+      audio.currentTime = 0;
+      audio.play();
     }
 
-    if (value === "unlock /future") {
+    // 💛 comando secreto
+    if (value === "te quiero") {
       setTimeout(() => {
         output.innerHTML += "<br>Este sistema no tiene rollback.<br>";
         output.innerHTML += "Porque cada decisión nos trajo aquí.<br>";
