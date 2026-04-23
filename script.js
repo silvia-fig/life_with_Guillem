@@ -2,7 +2,7 @@ const output = document.getElementById("output");
 const cmd = document.getElementById("cmd");
 const audio = document.getElementById("audio");
 
-cmd.disabled = true; // 🔒 bloqueado al inicio
+cmd.disabled = true;
 
 const intro = [
 "> iniciando life_with_Guillem...",
@@ -32,59 +32,17 @@ const intro = [
 "",
 "> te quiero 💛",
 "",
-"> sistema listo."
+"> sistema listo.",
+"> INPUT SYSTEM ONLINE"
 ];
 
 function typeLines(lines, i = 0) {
   if (i < lines.length) {
     output.innerHTML += lines[i] + "<br>";
-
     setTimeout(() => typeLines(lines, i + 1), 40);
-
   } else {
-
-    // 🧠 sistema activo
-    setTimeout(() => {
-      output.innerHTML += "<br>> INPUT SYSTEM ONLINE<br>";
-
-      cmd.disabled = false;
-      cmd.focus();
-
-      // 💡 IMPORTANTE
-      setTimeout(() => {
-        const systemInfo = document.createElement("div");
-        systemInfo.style.textAlign = "center";
-        systemInfo.style.marginTop = "25px";
-        systemInfo.style.fontSize = "13px";
-        systemInfo.style.opacity = "0.8";
-
-        systemInfo.innerHTML = `
-          <strong>IMPORTANTE:</strong><br>
-          ver README.md para entender el sistema completo 💛
-        `;
-
-        document.body.appendChild(systemInfo);
-
-        // 🔗 link repo
-        setTimeout(() => {
-          const link = document.createElement("div");
-          link.style.textAlign = "center";
-          link.style.marginTop = "10px";
-          link.style.fontSize = "12px";
-
-          link.innerHTML = `
-            <a href="https://github.com/silvia-fig/life_with_Guillem" target="_blank">
-              acceder al sistema base (README.md)
-            </a>
-          `;
-
-          document.body.appendChild(link);
-
-        }, 800);
-
-      }, 600);
-
-    }, 500);
+    cmd.disabled = false;
+    cmd.focus();
   }
 }
 
