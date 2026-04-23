@@ -6,7 +6,7 @@ body {
   font-family: "JetBrains Mono", monospace;
 }
 
-/* header opcional */
+/* header */
 .header {
   text-align: center;
   padding: 20px;
@@ -14,7 +14,7 @@ body {
   opacity: 0.6;
 }
 
-/* terminal container */
+/* terminal */
 .terminal {
   max-width: 900px;
   margin: auto;
@@ -34,7 +34,7 @@ body {
   font-size: 13px;
 }
 
-/* input estilo AI tool */
+/* input */
 #cmd {
   width: 100%;
   margin-top: 10px;
@@ -51,8 +51,9 @@ body {
 a {
   color: #5ef2b6;
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.85;
 }
+
 a:hover {
   opacity: 1;
 }
