@@ -2,9 +2,12 @@ const output = document.getElementById("output");
 const cmd = document.getElementById("cmd");
 const audio = document.getElementById("audio");
 
+cmd.disabled = true; // 🔒 bloqueamos input al inicio
+
 const intro = [
 "> iniciando life_with_Guillem...",
-"> sistema en producción (10 años)",
+"> cargando núcleo emocional...",
+"> inicializando sistema...",
 "",
 "> 2016 → Euroestudios",
 "> 22/04 → evento no planificado 😏",
@@ -25,25 +28,63 @@ const intro = [
 "> Cervellia fundada 🚀 (11/2025)",
 "> equipo: 5 personas",
 "",
-"> sistema listo",
+"> sincronizando vida compartida...",
 "",
-"> comandos:",
-"> open /cancion",
-"> open /denia",
-"> te quiero",
+"> te quiero 💛",
 "",
-"",
-"> IMPORTANTE:",
-"> ver README.md para entender el sistema completo 💛",
-"",
-"> comando:",
-"> open /readme"
+"> sistema listo."
 ];
 
 function typeLines(lines, i = 0) {
   if (i < lines.length) {
     output.innerHTML += lines[i] + "<br>";
-    setTimeout(() => typeLines(lines, i + 1), 25);
+
+    setTimeout(() => typeLines(lines, i + 1), 40);
+
+  } else {
+    // 🧠 cuando termina todo → desbloquea sistema
+
+    setTimeout(() => {
+      output.innerHTML += "<br><br>> INPUT SYSTEM ONLINE<br>";
+
+      cmd.disabled = false;
+      cmd.focus();
+
+      // 💡 IMPORTANTE aparece después
+      setTimeout(() => {
+        const important = document.createElement("div");
+        important.style.textAlign = "center";
+        important.style.marginTop = "25px";
+        important.style.fontSize = "13px";
+        important.style.opacity = "0.8";
+
+        important.innerHTML = `
+          <strong>IMPORTANTE:</strong><br>
+          ver README.md para entender el sistema completo 💛
+        `;
+
+        document.body.appendChild(important);
+
+        // 🔗 link repo después del importante
+        setTimeout(() => {
+          const link = document.createElement("div");
+          link.style.textAlign = "center";
+          link.style.marginTop = "10px";
+          link.style.fontSize = "12px";
+
+          link.innerHTML = `
+            <a href="https://github.com/silvia-fig/life_with_Guillem" target="_blank">
+              acceder al sistema base (README.md)
+            </a>
+          `;
+
+          document.body.appendChild(link);
+
+        }, 800);
+
+      }, 600);
+
+    }, 500);
   }
 }
 
@@ -54,29 +95,22 @@ cmd.addEventListener("keydown", (e) => {
     const value = cmd.value;
     output.innerHTML += "<br>> " + value + "<br>";
 
-    // 🌊 Denia
     if (value === "open /denia") {
       output.innerHTML += "<img src='assets/denia.jpg'><br>";
     }
 
-    // 🎶 Canción (AUTOPLAY CONTROLADO)
     if (value === "open /cancion") {
       output.innerHTML += "<br>🎶 reproduciendo Madre Tierra...<br>";
       audio.currentTime = 0;
       audio.play();
     }
 
-    // 💛 comando secreto
     if (value === "te quiero") {
       setTimeout(() => {
         output.innerHTML += "<br>Este sistema no tiene rollback.<br>";
         output.innerHTML += "Porque cada decisión nos trajo aquí.<br>";
         output.innerHTML += "Y aquí es donde quiero estar siempre.<br>";
       }, 500);
-    }
-
-    if (value === "open /readme") {
-      window.open("https://github.com/silvia-fig/life_with_Guillem", "_blank");
     }
 
     cmd.value = "";
