@@ -1,27 +1,74 @@
+/* ===== BASE ===== */
 body {
-  background: black;
-  color: #00ff9c;
-  font-family: "Courier New", monospace;
   margin: 0;
+  padding: 0;
+  background: #0b0f17;
+  color: #5ef2b6;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* ===== HEADER SYSTEM ===== */
+.header {
+  text-align: center;
   padding: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+  letter-spacing: 1px;
 }
 
+/* ===== TERMINAL CONTAINER ===== */
 .terminal {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
+/* ===== OUTPUT ===== */
+#output {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-size: 13px;
+}
+
+/* ===== INPUT (command bar estilo SaaS) ===== */
 #cmd {
   width: 100%;
-  background: black;
-  color: #00ff9c;
-  border: none;
+  margin-top: 15px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  color: #5ef2b6;
   outline: none;
-  font-family: inherit;
-  margin-top: 20px;
+  font-size: 13px;
+  transition: all 0.2s ease;
 }
 
+#cmd:focus {
+  border-color: #5ef2b6;
+  box-shadow: 0 0 0 2px rgba(94,242,182,0.1);
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #5ef2b6;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+/* ===== IMAGES ===== */
 img {
-  margin-top: 10px;
-  max-width: 300px;
+  margin-top: 12px;
+  max-width: 320px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
 }
