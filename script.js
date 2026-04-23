@@ -33,7 +33,6 @@ const intro = [
 "",
 "> sincronizando vida compartida...",
 "",
-"> te quiero 💛",
 "",
 "> SYSTEM STATE: READY [OK]",
 "> COMANDOS REGISTRADOS DISPONIBLES",
