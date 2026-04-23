@@ -55,7 +55,7 @@ cmd.addEventListener("keydown", (e) => {
 
     // 🌊 Denia
     if (value === "open /denia") {
-      output.innerHTML += "<img src='assets/denia.jpg'><br>";
+      output.innerHTML += "<img src='assets/denia.jpeg'><br>";
     }
 
     // 🎶 QR → reproduce canción
