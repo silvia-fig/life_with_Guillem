@@ -28,12 +28,15 @@ const intro = [
 "> sistema listo",
 "",
 "> comandos:",
-"> open /denia",
 "> open /cancion",
+"> open /denia",
 "> te quiero",
 "",
 "> IMPORTANTE:",
-"> ver README.md para entender el sistema completo 💛"
+"> ver README.md para entender el sistema completo 💛",
+"",
+"> comando:",
+"> open /readme"
 ];
 
 function typeLines(lines, i = 0) {
@@ -69,6 +72,10 @@ cmd.addEventListener("keydown", (e) => {
         output.innerHTML += "Porque cada decisión nos trajo aquí.<br>";
         output.innerHTML += "Y aquí es donde quiero estar siempre.<br>";
       }, 500);
+    }
+
+    if (value === "open /readme") {
+      window.open("https://github.com/silvia-fig/life_with_Guillem", "_blank");
     }
 
     cmd.value = "";
