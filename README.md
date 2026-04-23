@@ -172,15 +172,21 @@ Estado del sistema:
 
 Gracias por aquel viernes 22 de abril de 2016.
 
+
 Por dejarte engañar (un poco). 
+
 Por quedarte (del todo). 
 
 Y por esta vida que estamos construyendo juntos. 
 
+
 Esto no es una simulación.
+
 Esto es producción.
 
+
 Cada versión de este sistema ha llevado exactamente hasta aquí.
+
 
 Y si se volviera a compilar desde cero…
 se elegirían los mismos módulos.
