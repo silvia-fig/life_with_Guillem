@@ -2,7 +2,7 @@ const output = document.getElementById("output");
 const cmd = document.getElementById("cmd");
 const audio = document.getElementById("audio");
 
-cmd.disabled = true; // 🔒 bloqueamos input al inicio
+cmd.disabled = true; // 🔒 bloqueado al inicio
 
 const intro = [
 "> iniciando life_with_Guillem...",
@@ -42,30 +42,30 @@ function typeLines(lines, i = 0) {
     setTimeout(() => typeLines(lines, i + 1), 40);
 
   } else {
-    // 🧠 cuando termina todo → desbloquea sistema
 
+    // 🧠 sistema activo
     setTimeout(() => {
-      output.innerHTML += "<br><br>> INPUT SYSTEM ONLINE<br>";
+      output.innerHTML += "<br>> INPUT SYSTEM ONLINE<br>";
 
       cmd.disabled = false;
       cmd.focus();
 
-      // 💡 IMPORTANTE aparece después
+      // 💡 IMPORTANTE
       setTimeout(() => {
-        const important = document.createElement("div");
-        important.style.textAlign = "center";
-        important.style.marginTop = "25px";
-        important.style.fontSize = "13px";
-        important.style.opacity = "0.8";
+        const systemInfo = document.createElement("div");
+        systemInfo.style.textAlign = "center";
+        systemInfo.style.marginTop = "25px";
+        systemInfo.style.fontSize = "13px";
+        systemInfo.style.opacity = "0.8";
 
-        important.innerHTML = `
+        systemInfo.innerHTML = `
           <strong>IMPORTANTE:</strong><br>
           ver README.md para entender el sistema completo 💛
         `;
 
-        document.body.appendChild(important);
+        document.body.appendChild(systemInfo);
 
-        // 🔗 link repo después del importante
+        // 🔗 link repo
         setTimeout(() => {
           const link = document.createElement("div");
           link.style.textAlign = "center";
