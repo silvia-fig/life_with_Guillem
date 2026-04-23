@@ -54,12 +54,12 @@ cmd.addEventListener("keydown", (e) => {
     output.innerHTML += "<br>> " + value + "<br>";
 
     // 🌊 Denia
-    if (value === "open /denia") {
-      output.innerHTML += "<img src='assets/denia.jpeg'><br>";
+    if (value === "open/denia") {
+      output.innerHTML += "<img src='assets/denia.jpg'><br>";
     }
 
     // 🎶 QR → reproduce canción
-    if (value === "open /qr") {
+    if (value === "open/qr") {
       output.innerHTML += "<img src='assets/madre_tierra_qr.png'><br>";
       output.innerHTML += "<br>🎶 reproduciendo recuerdo...<br>";
 
