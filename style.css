@@ -6,7 +6,7 @@ body {
   font-family: "JetBrains Mono", monospace;
 }
 
-/* header */
+/* HEADER */
 .header {
   text-align: center;
   padding: 20px;
@@ -14,7 +14,7 @@ body {
   opacity: 0.6;
 }
 
-/* terminal */
+/* TERMINALS */
 .terminal {
   max-width: 900px;
   margin: auto;
@@ -27,14 +27,14 @@ body {
   margin-bottom: 15px;
 }
 
-/* output */
+/* OUTPUT */
 #output {
   line-height: 1.6;
   white-space: pre-wrap;
   font-size: 13px;
 }
 
-/* input */
+/* INPUT */
 #cmd {
   width: 100%;
   margin-top: 10px;
@@ -47,7 +47,7 @@ body {
   font-size: 13px;
 }
 
-/* links */
+/* LINKS */
 a {
   color: #5ef2b6;
   text-decoration: none;
@@ -58,7 +58,7 @@ a:hover {
   opacity: 1;
 }
 
-/* imágenes */
+/* IMAGES */
 img {
   margin-top: 12px;
   max-width: 320px;
