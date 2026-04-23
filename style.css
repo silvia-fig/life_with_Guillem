@@ -1,0 +1,27 @@
+body {
+  background: black;
+  color: #00ff9c;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+.terminal {
+  max-width: 800px;
+  margin: auto;
+}
+
+#cmd {
+  width: 100%;
+  background: black;
+  color: #00ff9c;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  margin-top: 20px;
+}
+
+img {
+  margin-top: 10px;
+  max-width: 300px;
+}
