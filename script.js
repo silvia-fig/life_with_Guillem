@@ -32,6 +32,7 @@ const intro = [
 "> open /denia",
 "> te quiero",
 "",
+"",
 "> IMPORTANTE:",
 "> ver README.md para entender el sistema completo 💛",
 "",
